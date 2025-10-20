@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+         
+</head>
+
+<body>
+    <section class="header">
+<nav>
+     <a style="cursor: default;" href=""><img style="width: 55%;" src="logo.png" alt="logo"></a>
+     
+
+    <div class="nav-links" id="navlinks">
+        <!-- Cancel Icon -->
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li class="ul"><a  href="index.html">HOME</a></li>
+            <li class="ul"><a href="#COURSE">COURSES</a></li>
+            <!-- <li class="ul"><a href="#STREAM">STREAMS</a></li> -->
+            <li class="ul"><a href="contact.html">CONTACT</a></li>
+            <li class="ul"><a href="about.html">ABOUT</a></li>
+            <li class="ul"><a href="http://127.0.0.1:5500/login.html">LOGIN</a></li>
+        </ul>
+    </div>
+    <!-- for menu bar -->
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+
+</nav>
+<div class="text-box">
+    <br><br><br> <br><br><br> <br><br><br><br>
+    <h1>Curated Classroom</h1>
+    <p>Unlock a world of knowledge with our Educational Resource Portal! Whether you're a student, teacher, or lifelong learner,<br>our platform offers a vast collection of interactive lessons, study materials, and tools designed to make learning easier and more engaging.<br> Access expert-curated content on a wide range of subjects—anytime, anywhere.Discover, learn, and grow with us—your one-stop destination for educational success!</p>
+    <a class="hero-btn" href="#visit">Visit Us To Know More</a>
+
+</div>
+
+    </section>
+<!-- COURSE -->
+ <section class="course" id="COURSE">
+              <h1 id="CH">Courses We Offer</h1>
+              <p id="CP">Our educational resource portal offers a diverse range of courses designed to cater to learners of all ages and skill levels.<br> Whether you're a student looking to strengthen your understanding of core subjects, a professional aiming to upskill, or a lifelong learner pursuing a new passion, our platform provides a variety of interactive courses.</p>
+              <div class="row">
+                <a class="course-col" href="http://127.0.0.1:5500/Matricultion%20courses.html">
+                <div>
+                    <h3>Matriculation</h3>
+                    <p>We offer advance courses for the preparation of matriculation level exam along with various books,past papers and practice exercises.<br><br><h4 class="click-here">Click Here</h4></p>
+                </div></a>
+                <a class="course-col" href="http://127.0.0.1:5500/intermediate%20courses.html">
+                <div>
+                    <h3>Intermediate</h3>
+                    <p>We have the best teachers available to help you get through the intermediate exams and
+                    our self-made notes for easy understanding.<br><br><h4 class="click-here">Click Here</h4></p>
+                </div></a>
+                <a class="course-col" href="bacholer-all.html">
+                <div>
+                    <h3>Bachelors</h3>
+                    <p>We provide easy online lectures and allow the student to get experience by offering internship from international companies.<br><br><h4 class="click-here">Click Here</h4></p>                
+                </div></a>
+              </div>
+ </section>
+
+ <!-- OUR FACILITIES -->
+  <section id="visit" class="facilities">
+<h1 style="font-size: 35px;">Our Facilities</h1>
+<br>
+<p>Our educational resource portal is designed to enhance the learning experience by providing a comprehensive range of tools <br> and resources for students including access to digital textbooks, interactive learning modules,and video tutorials..The portal also offers a library of research papers,e-books, and reference materials, making it a one-stop destination for academic support.</p>
+<div class="row">
+    <div class="facilities-col">
+        <a href="online-classes.html"><img src="classes.jpg" alt="Online Class">
+        <h3>Free Online Classes</h3></a>
+        <p>Our Online classes have become a popular and flexible mode of education, offering numerous benefits for both students and educators </p>
+    </div>
+    <div class="facilities-col">
+        <a href="online-quiz.html"><img src="quizz.jpg" alt="Online Quizes">
+        <h3>Online Quizzes</h3></a>
+        <p>We provide online quizzes which comes with features like timed questions, randomized answer choices, and automatic grading, which makes the process more efficient for both educators and students.</p>
+    </div>
+    <div class="facilities-col">
+        <a href=""><img src="e-book.jpg" alt="Online Books">
+        <h3>E-Books</h3></a>
+        <p>For needy students our library also offers free access to a wide range of e-books, providing students with valuable resources for learning.</p>
+    </div>
+</div>
+  </section>
+
+
+ <!-- Contacts -->
+  <section id="CONTACT" class="cta">
+    <h1>Enroll For Our Various Online Courses<br>Anywhere From The World</h1>
+    <a class="hero-btn" href="contact.html" target="_blank">Contact Us</a>
+  </section>
+
+  <!-- Footer -->
+   <section style= font-size:14px; class="footer">
+    <h4>About Us</h4>
+    <p> We believe in the power of knowledge and strive to create a user-friendly platform that supports diverse learning styles and needs.<br>Our team is passionate about education, and we are committed to ensuring that every learner has the opportunity to succeed, no matter their background or location.<br> Thank you for being a part of our community, and we look forward to supporting your educational journey.</p>
+    <div class="icon">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>  
+    </div>
+    <p>&#169; All Rights Reserved By Code Catalysts</p>
+    <p>Made With <i class="fas fa-heart"></i> From Code Catalysts</p>
+   </section>
+
+
+
+
+
+
+    <!-- JavaScript -->
+    <script>
+var navLinks= document.getElementById("navlinks");
+function showMenu(){
+    navLinks.style.right= "0";
+}
+function hideMenu()
+{
+    navLinks.style.right="-200px";
+}
+
+
+    </script>
+</body>
+</html>

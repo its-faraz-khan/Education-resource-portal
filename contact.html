@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+</head>
+<body>
+    <section id="small-screen" class="sub-header">
+        <nav>
+             <a href=""><img style="width: 55%;" src="logo.png" alt="logo"></a>
+        
+            <div class="nav-links" id="navlinks">
+                <!-- Cancel Icon -->
+                  <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li class="ul"><a  href="index.html" target="_blank">HOME</a></li>
+                    <li class="ul"><a href="http://127.0.0.1:5500/index.html#COURSE" target="_blank">COURSES</a></li>
+                    <li class="ul"><a href="http://127.0.0.1:5500/index.html#STREAM" target="_blank">STREAM</a></li>
+                    <li class="ul"><a href="contact.html" target="_blank">CONTACT</a></li>
+                    <li class="ul"><a href="about.html">ABOUT</a></li>
+                    <li class="ul"><a href="">LOGIN</a></li>
+                    
+                </ul>
+            </div>
+            <!-- for menu bar -->
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 id="h1-small" style="font-size: 40px; position: relative; top: -60px;">Contact Us</h1>  
+        </section>
+        
+        <!-- Contact -->
+         <section class="location">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13520.061106086605!2d74.74893271923062!3d32.09587279698238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391953f55817d0e1%3A0x95c765f70d155ed0!2sUniversity%20of%20Engineering%20and%20Technology%20(Narowal%20Sub-Campus)!5e0!3m2!1sen!2s!4v1733135007733!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </section>
+
+         <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>University of Engineering & Technology Lahore, Narowal Campus</h5>
+                        <p>Siraj Adda, Narowal, Pakistan</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+92-3437807380</h5>
+                        <p>If you have any kind of issues.Contact us throught this number.</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h5>curatedclassroom56@gmail.com</h5>
+                        <p>Email us your queries.</p>
+                    </span>
+                </div>
+                </div>
+                
+                <div class="contact-col">
+                    <form action="">
+                        <input type="text" placeholder="Enter your name*" required>
+                        <input type="email" placeholder="Enter your email*" required>
+                        <input type="text" placeholder="Enter your subject*" required>
+                        <textarea rows="8" placeholder="Message*" required></textarea>
+                        <button class="hero-btn red-btn">Send Message</button>
+                    </form>
+
+
+
+
+                </div>
+            </div>
+         </section>
+   
+
+        <!-- Footer -->
+<section style="background-color: white; color: black;" class="footer">
+    <h4>About Us</h4>
+    <p style="font-size: 14px;">We believe in the power of knowledge and strive to create a user-friendly platform that supports diverse learning styles and needs.<br>Our team is passionate about education, and we are committed to ensuring that every learner has the opportunity to succeed, no matter their background or location.<br> Thank you for being a part of our community, and we look forward to supporting your educational journey</p>
+    <div class="icon">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>  
+    </div>
+    <p>&#169; All Rights Reserved By Code Catalysts</p>
+    <p>Made With <i class="fas fa-heart"></i> From Code Catalysts</p>
+   </section>
+  <!-- JavaScript -->
+  <script>
+    var navLinks= document.getElementById("navlinks");
+    function showMenu(){
+        navLinks.style.right= "0";
+    }
+    function hideMenu()
+    {
+        navLinks.style.right="-200px";
+    }
+    
+    
+        </script>
+
+
+</body>
+</html>

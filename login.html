@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+      
+</head>
+<body>
+    <div class="hero">
+
+        <div class="form-box">
+            <img style="display: block; height: 180px; position: relative; top: -20px; left: -15px;" src="logo.png" alt="">
+            <div class="button-box">
+                
+            <div id="btn">
+             
+            </div>
+            <button type="button" class="toggle-btn" onclick="login()"><b>Log In</b></button>
+            <button type="button" class="toggle-btn" onclick="register()"><b>Register</b></button>
+            </div>
+            <div class="social-icons">
+                <img src="fb.png" alt="">
+                <img src="tw.png" alt="">
+                <img src="google.png" alt="">
+            </div>
+            <form id="login" class="input-group" onsubmit="index(event)">
+                <input type="text" class="input-field" placeholder=" Enter Username" required><br>
+                <input type="password" class="input-field" placeholder=" Enter your Password" required><br>
+                <pre><input type="checkbox" id="check-box"><span style="color: white;">Remember Password</span></pre>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form  id="register" class="input-group" onsubmit="index(event)">
+                <input type="text" class="input-field" placeholder="Enter Username" required><br>
+                <input type="email" class="input-field" placeholder=" Enter your Email" required><br>
+                <input type="password" class="input-field" placeholder=" Enter your Password" required><br>
+                <pre><input type="checkbox" id="check-box"><span style="color: white;">I agree to the terms & conditions</span></pre>
+             <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <!-- Javascript -->
+     <script>
+        var faraz=document.getElementById("login");
+        var munir=document.getElementById("register");
+        var khan=document.getElementById("btn");
+        function register(){
+            faraz.style.left= "-400px";
+            munir.style.left= "50px";
+            khan.style.left="110px";
+        }
+        function login(){
+            faraz.style.left= "50px";
+            munir.style.left= "450px";
+            khan.style.left="0px";
+        }
+
+        // for login
+
+        function index(event) {
+        event.preventDefault();  // Prevent the form from submitting the traditional way
+        window.location.href = "index.html";  // Redirect to index.html
+    }
+     </script>
+</body>
+</html>
